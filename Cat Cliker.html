@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body>
+
+    <img id="image-cat" src="https://c3.staticflickr.com/2/1126/625069434_db86b67df8_b.jpg">
+
+
+<p id ="count" >0</p>
+<script>
+    window.onload = function(){
+        var ele = document.getElementById('image-cat');
+        console.log(ele);
+        ele.addEventListener('click()',function () {
+            debugger;
+            var count = parseInt(document.getElementById('count').innerHTML);
+            console.log(count);
+            document.getElementById('count').innerHTML = toString(parseInt(count+1));
+
+        },false);
+    };
+
+</script>
+</body>
+</html>

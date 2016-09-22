@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <script src="javascript/car.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron"  style="margin-top: 10%">
+        <div class="row">
+            <div class="col-md-4 well" id ="car1">
+                <div id="name1" class = "well"></div>
+                <div id="model1"  class = "well"></div>
+                <div id="cost1"  class = "well"></div>
+                <div id="color1"  class = "well"></div>
+                <div id ="button1" class="text-center" >
+                    <button onclick="car1.changeColor(),print(car1) ">Color Blue</button>
+                </div>
+            </div>
+            <div class="col-md-4 well" id ="car2">
+                <div id="name2"  class = "well"></div>
+                <div id="model2"  class = "well"></div>
+                <div id="cost2"  class = "well"></div>
+                <div id="color2"  class = "well"></div>
+                <div id ="button2" class="text-center"><button onclick="car2.changeColor(),print(car2)">Color Blue</button></div>
+            </div>
+            <div class="col-md-4 well" id="car3">
+                <div id="name3"  class = "well"></div>
+                <div id="model3"  class = "well"></div>
+                <div id="cost3"  class = "well"></div>
+                <div id="color3"  class = "well"></div>
+                <div id ="button3" class="text-center" ><button onclick="car3.changeColor(),print(car3)">Color Blue</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("name1").innerHTML = 'name: '+car1.name;
+    document.getElementById("model1").innerHTML = 'Model: '+car1.model;
+    document.getElementById("color1").innerHTML = 'color: '+car1.color;
+    document.getElementById("cost1").innerHTML = 'Cost: '+car1.cost;
+    document.getElementById("name2").innerHTML = 'name: '+car2.name;
+    document.getElementById("model2").innerHTML = 'Model: '+car2.model;
+    document.getElementById("color2").innerHTML = 'color: '+car2.color;
+    document.getElementById("cost2").innerHTML = 'Cost: '+car2.cost;
+    document.getElementById("name3").innerHTML = 'name: '+car3.name;
+    document.getElementById("model3").innerHTML = 'Model: '+car3.model;
+    document.getElementById("color3").innerHTML = 'color: '+car3.color;
+    document.getElementById("cost3").innerHTML = 'Cost: '+car3.cost;
+    function print(object) {
+        document.getElementById("color"+object.type.toString()).innerHTML = 'color: '+object.color;
+    }
+</script>
+</body>
+</html>
