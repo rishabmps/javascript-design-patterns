@@ -7,3 +7,5 @@ $('#myTable').on('click', 'input[type="button"]', function () {
 $('#insert').click(function () {
     $('#myTable').append('<tr><td><input type="text" class="fname" /></td><td><input type="button" value="Delete" /></td></tr>')
 });
+
+
